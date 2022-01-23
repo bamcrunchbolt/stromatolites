@@ -1,6 +1,10 @@
 # stromatolites
 ## What?
-These are the pieces of _DLA 3D EXT_ that I modified to include spike fields and allow for an attraction radius that goes to zero. Users can model particle accumulation over a single spike or a spike field and can control spike height and (in the case of a field) spike spacing.
+These are the pieces of _DLA 3D EXT_ that I modified to include spike fields and allow for an attraction radius that goes to zero. Users can model particle accumulation over a single spike or a spike field and can control spike height and (in the case of a field) spike spacing. 
+- InitialSurfaceManager* -- includes spike creation code. 
+- InitialSurfaceDialog* -- allows user to create spikes in Simulator GUI.
+- SimulationSettings* -- allows user to set AR to 0.
+- FileManager* -- gives simulation files names that are a little more informative; esp. useful if you're running tons of simulations.
 
 ## Why?
 _DLA 3D EXT_ is an open-source program that models particle accumulation over a surface using diffusion-limited aggregation. It's a great analog for stromatolite formation! My goal with modifying this software was to model stromatolite formation in the distal slope facies of travertine hot springs, and then see whether we could quantify any uniquely biological characteristics using fractal analysis. <a href="https://scholarworks.umt.edu/etd/11766/">Read more here</a>.
